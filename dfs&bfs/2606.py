@@ -5,13 +5,13 @@ num = int(input())
 N = int(input())
 
 graph = [list(map(int, input().split())) for _ in range(N)]
-visited = [False] * num
+visited = [False] * (num+1)
 
 
 def bfs(v):
     q = deque([v])
     visited[v] = True
-    count = 1
+    count = 0                 # 1번을 통해!!
     while q:
         i = q.popleft()
         for x, y in graph:
