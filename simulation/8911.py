@@ -5,17 +5,6 @@ dx = [0, 1, 0, -1]
 dy = [1, 0, -1, 0]
 
 
-# def square(stack):
-#     minw, minh = 1e9, 1e9
-#     maxw, maxh = -1e9, -1e9
-#     for x, y in stack:
-#         minw = min(x, minw)
-#         maxw = max(x, maxw)
-#         minh = min(y, minh)
-#         maxh = max(y, maxh)
-#     return (maxw-minw) * (maxh-minh)
-
-
 for _ in range(int(input())):
     x, y, k = 0, 0, 0
     minw, minh = 0, 0
