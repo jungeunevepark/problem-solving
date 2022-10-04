@@ -7,13 +7,13 @@ dy = [1, -1, 0, 0]
 
 
 def bomb(array):
-    visited = [[False] * 6 for _ in range(12)]
     flag = 0
     q = deque(())
-    for i in range(11, -1, -1):
+    for i in range(12):
         for j in range(6):
-            if array[i][j] == '.' or visited[i][j]:
+            if array[i][j] == '.':
                 continue
+            visited = [[False] * 6 for _ in range(12)]
             q.append((i, j))
             stack = [(i, j)]      # 제거할 칸 위치 저장
             count = 1             # 4칸 이상인지 카운트
@@ -22,8 +22,8 @@ def bomb(array):
             while q:
                 x, y = q.popleft()
                 for k in range(4):
-                    nx = x+dx[k]
-                    ny = y+dy[k]
+                    nx = x + dx[k]
+                    ny = y + dy[k]
                     if 0 <= nx < 12 and 0 <= ny < 6 and array[nx][ny] == color and not visited[nx][ny]:
                         visited[nx][ny] = True
                         count += 1
@@ -41,15 +41,16 @@ while True:
     array, flag = bomb(array)
     if flag == 0:
         break
-    count += flag
+    else:
+        count += 1
     for j in range(6):
+        queue = deque()
         for i in range(11, -1, -1):
             if array[i][j] != '.':
-                break
-        if i == 11 or i == 0:
-            continue
-        for k in range(i+1):
-            array[11 - k][j] = array[i - k][j]
-        for u in range(11-i):
-            array[u][j] = '.'
+                queue.append(array[i][j])
+        for k in range(11, -1, -1):
+            if queue:
+                array[k][j] = queue.popleft()
+            else:
+                array[k][j] = '.'
 print(count)
