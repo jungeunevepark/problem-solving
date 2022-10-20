@@ -14,7 +14,7 @@ NxN인 격자에서 연습, (r행, c열), A[r][c]는 (r, c)에 저장된 물의 
 M번의 이동 후, 물의 양의 합을 구하자!
 """
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 
 N, M = map(int, input().split())
 sky = [list(map(int, input().split())) for _ in range(N)]

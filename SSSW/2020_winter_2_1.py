@@ -2,7 +2,7 @@
 NxN 격자 (r행, c열) A[r][c]는 (r,c)에 있는 모래의 양
 """
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 # from collections import deque
 
 dx = [0, 1, 0, -1]

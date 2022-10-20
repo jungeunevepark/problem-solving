@@ -1,6 +1,6 @@
 from collections import deque
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 
 N, M = map(int, input().split())
 game = [list(map(int, input().split())) for _ in range(N)]

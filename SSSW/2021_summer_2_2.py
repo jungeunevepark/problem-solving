@@ -2,7 +2,7 @@
 NxN인 격자, (r행, c열)
 """
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 from collections import deque
 
 N, M = map(int, input().split())

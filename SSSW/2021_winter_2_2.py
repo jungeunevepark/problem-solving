@@ -16,7 +16,7 @@
 6. 다시 일렬로 놓기
 """
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 N, K = map(int, input().split()) # N개의 어항, K개 이하의 차이
 fishhouse = list(map(int, input().split()))
 fishmap = [[-1] * N for _ in range(N)]

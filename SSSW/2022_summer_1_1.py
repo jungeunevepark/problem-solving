@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 n, m, h, k = map(int, input().split())
 run = []
 dx = [0, -1, 0, 1]
