@@ -3,11 +3,31 @@ sys.stdin = open("input.txt", "r")
 N, M = map(int, input().split())
 noheard = list(input() for _ in range(N))
 nolook = list(input() for _ in range(M))
+noheard.sort(reverse=True)
+nolook.sort(reverse=True)
 answer = []
-count = 0
-for h in noheard:
-    if h in nolook:
+count,i,j = 0, 0, 0
+A = nolook.pop()
+B = noheard.pop()
+while True:
+    test = []
+    if A == B:
+        answer.append(A)
         count+=1
-        answer.append(h)
+        if not nolook:
+            break
+        A = nolook.pop()
+        B = noheard.pop()
+    else:
+        test.append(A)
+        test.append(B)
+        if sorted(test)[0] == A:
+            if not nolook:
+                break
+            A = nolook.pop()
+        else:
+            if not noheard:
+                break
+            B = noheard.pop()
 print(count)
 print("\n".join(sorted(answer)))
