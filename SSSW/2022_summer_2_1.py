@@ -1,6 +1,6 @@
 from collections import deque
 import sys
-sys.stdin = open("../implement/input.txt", "r")
+sys.stdin = open("../greedy/input.txt", "r")
 
 n, m, k = map(int, input().split())
 maze = [list(map(int, input().split())) for _ in range(n)]

@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("../implement/input.txt", "r")
+sys.stdin = open("../greedy/input.txt", "r")
 N, M, K = map(int, input().split())
 firemap = [[0]*N for _ in range(N)]
 fireballs = {}

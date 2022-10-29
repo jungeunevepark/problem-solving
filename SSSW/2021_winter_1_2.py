@@ -9,7 +9,7 @@ RXC 크기를 가진 집에 온풍기를 설치
     모든 칸의 온도가 K이상이면 테스트를 중단하고 아니면 1부터 다시 시작
 """
 import sys
-sys.stdin = open("../implement/input.txt", "r")
+sys.stdin = open("../greedy/input.txt", "r")
 from collections import deque
 R, C, K = map(int, input().split())
 room = [list(map(int, input().split())) for _ in range(R)]

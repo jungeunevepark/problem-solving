@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("../implement/input.txt", "r")
+sys.stdin = open("../greedy/input.txt", "r")
 n, m, k, c = map(int, input().split())
 treemap = [list(map(int, input().split())) for _ in range(n)]
 danger = [[0]*n for _ in range(n)] # 제초제 남은 년 수
