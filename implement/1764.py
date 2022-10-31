@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("../greedy/input.txt", "r")
+sys.stdin = open("input.txt", "r")
 N, M = map(int, input().split())
 noheard = list(input() for _ in range(N))
 nolook = list(input() for _ in range(M))

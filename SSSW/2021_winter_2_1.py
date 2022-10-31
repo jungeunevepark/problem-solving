@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("../greedy/input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 from collections import deque
 """상어가 지나온 곳은 다시 지나갈 수 있음.. 이때 물고기를 다시 세지 않도록 주의"""
 

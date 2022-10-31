@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 # input = sys.stdin.readline
 
 N, K = map(int, input().split())

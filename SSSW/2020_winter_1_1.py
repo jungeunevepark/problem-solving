@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("../greedy/input.txt", "r")
+sys.stdin = open("../implement/input.txt", "r")
 from collections import deque
 
 N, K = map(int, input().split())

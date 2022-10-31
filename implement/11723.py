@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("../greedy/input.txt", "r")
+sys.stdin = open("input.txt", "r")
 input= sys.stdin.readline
 S = set()
 for _ in range(int(input().rstrip())):
