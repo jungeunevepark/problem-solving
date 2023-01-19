@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../basic_part1/input.txt", "r")
 
 N, M = map(int, input().split())
 app = [0] + list(map(int, input().split()))

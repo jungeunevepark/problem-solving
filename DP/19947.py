@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../basic_part1/input.txt", "r")
 one = list(input())
 two = list(input())
 array = ""

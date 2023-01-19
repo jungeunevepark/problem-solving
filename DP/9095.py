@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../basic_part1/input.txt", "r")
 for _ in range(int(input())):
     n = int(input())
     d = [1, 1, 2] + [0] * (n-2)

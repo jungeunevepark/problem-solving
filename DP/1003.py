@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../basic_part1/input.txt", "r")
 d = [[0] * 2 for _ in range(41)]
 
 for x in range(41):

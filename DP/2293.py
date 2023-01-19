@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../basic_part1/input.txt", "r")
 
 n, k = map(int, input().split())
 array = list(int(input()) for _ in range(n))

@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("../basic_part1/input.txt", "r")
 N = int(input())
 step = [0] + [int(input()) for _ in range(N)]
 
